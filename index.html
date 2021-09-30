@@ -6,18 +6,38 @@
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="https://unpkg.com/callapp-lib"></script>
+    <script type="text/javascript">
+        const option = {
+            scheme:{
+                protocol:"https",
+                host:"239what475.github.io"
+            },
+            intent:{
+                package:"com.twt.service",
+                scheme:"https"
+            },
+            timeout:2000,
+            fallback:"https://www.baidu.com"
+        }
+        const callLib = new CallApp(options)
 
-    <title>this's a demo</title>
-23123
-
-    <a href="https://239what475.github.io/recipe">Do Whatever</a>
-    <a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
-    <!-- <a href="intent://239what475.github.io/recipe/#Intent;scheme=https;package=com.twt.service;component=recipe;S.browser_fallback_url=https://www.baidu.com;end">Do Whatever</a> -->
+        function clickOpenApp() {
+            callLib.open({
+                params: {},
+                path: "/recipe"
+            })
+        }
+    </script>
 </head>
 
 <body>
-
-
+    <a href="https://239what475.github.io/recipe">Do Whatever</a>
+    <a
+        href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end">
+        Take a QR code </a>
+    <a href="intent://239what475.github.io/recipe/#Intent;scheme=https;package=com.twt.service;component=recipe;S.browser_fallback_url=https://www.baidu.com;end">Do Whatever</a>
+    <button id="to-app-button" onclick="clickOpenApp()">fefasefs</button>
 </body>
 
 </html>
