@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.twt.service",
+    "sha256_cert_fingerprints":
+    ["1F:45:6E:AF:C8:2A:58:FE:B4:8D:47:17:DA:C1:82:EA:68:8D:74:75:24:50:76:41:31:92:6E:3B:D7:BD:60:DE"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://239what475.github.io"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.twt.service",
+    "sha256_cert_fingerprints":
+    ["1F:45:6E:AF:C8:2A:58:FE:B4:8D:47:17:DA:C1:82:EA:68:8D:74:75:24:50:76:41:31:92:6E:3B:D7:BD:60:DE"]
+  }
+}]
