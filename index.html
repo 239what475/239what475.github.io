@@ -3,7 +3,7 @@
 
 <head>
     <script>
-        function onTap() {
+        setTimeout(function onTap() {
             try {
                 let url = window.location.href
                 console.log(url)
@@ -12,53 +12,15 @@
                 let result = "twtstudio://weipeiyang.app/feedback?questionid=" + postId
                 console.log(result)
                 window.location.href = result
-                // window.location.href="https://239what475.github.io/recipe"
             } catch (error) {
                 console.log(error.message)
             }
-        }
-
-        function onTap2() {
-            try {
-                let url = window.location.href
-                console.log(url)
-                let postId = url.split("=")[1]
-                console.log(postId)
-                let result = "https://mobile.twt.edu.cn/feedback?questionid=" + postId
-                console.log(result)
-                window.location.href = result
-                // window.location.href="https://239what475.github.io/recipe"
-            } catch (error) {
-                console.log(error.message)
-            }
-        }
-
-        (function () {
-            var print = {
-                lock: true,
-                log: function (param) {
-                    if (this.lock) {
-                        var element = document.createElement("div");
-                        element.style.background = 'green'
-                        element.style.fontSize = '20px'
-                        switch (typeof param) {
-                            case "string": element.innerHTML = param; break;
-                            case "object": element.innerHTML = JSON.stringify(param); break;
-                        }
-                        document.body.appendChild(element)
-                    }
-                }
-            }
-            window.console = print;
-        })(window)
+        },2000)
     </script>
 </head>
 
 <body>
-    <button id="to-app-button" onclick="onTap2()">fefasefs2</button>
 
-
-    <button id="to-app-button" onclick="onTap()">fefasefs</button>
 </body>
 
 </html>
