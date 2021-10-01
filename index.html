@@ -75,16 +75,37 @@
             }
         }
 
+        (function () {
+            var print = {
+                lock: true,
+                log: function (param) {
+                    if (this.lock) {
+                        var element = document.createElement("div");
+                        element.style.background = 'green'
+                        element.style.fontSize = '20px'
+                        switch (typeof param) {
+                            case "string": element.innerHTML = param; break;
+                            case "object": element.innerHTML = JSON.stringify(param); break;
+                        }
+                        document.body.appendChild(element)
+                    }
+                }
+            }
+            window.console = print;
+        })(window)
+
         if (is_weixn()) {
-            
            document.getElementById("EleId").style.display="inline";
         }else {
             console.log("221")
         }
+
+
     </script>
 </head>
 
-<body>
+<body onload="is_weixn()">
+
     <div id="EleId">请选择右上角··· ,在浏览器中打开此页面</div>
     <button id="to-app-button" onclick="onTap()">点击跳转微北洋</button>
 </body>
