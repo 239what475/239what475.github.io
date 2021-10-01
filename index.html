@@ -19,15 +19,16 @@
             border: 1px solid transparent;
             font-weight: 900;
             font-size: 5vh;
-            position: absolute;   
-            top: 50%;   
-            left: 50%;   
-            -webkit-transform: translate(-50%, -50%);   
-            -moz-transform: translate(-50%, -50%);   
-            -ms-transform: translate(-50%, -50%);   
-            -o-transform: translate(-50%, -50%);   
-            transform: translate(-50%, -50%); 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
+
         #EleId {
             width: 800px;
             height: 500px;
@@ -42,14 +43,14 @@
             border: 1px solid transparent;
             font-weight: 900;
             font-size: 3vh;
-            position: absolute;   
-            top: 30%;   
-            left: 50%;   
-            -webkit-transform: translate(-50%, -50%);   
-            -moz-transform: translate(-50%, -50%);   
-            -ms-transform: translate(-50%, -50%);   
-            -o-transform: translate(-50%, -50%);   
-            transform: translate(-50%, -50%); 
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
     <script>
@@ -94,17 +95,19 @@
         //     window.console = print;
         // })(window)
 
-        if (!is_weixn()) {
-           document.getElementById("EleId").style.display="none";
-        }else {
-            console.log("221")
+        window.onload = function () {
+            if (!is_weixn()) {
+                document.getElementById("EleId").style.display = 'none'
+            } else {
+                console.log("221")
+            }
         }
 
 
     </script>
 </head>
 
-<body onload="is_weixn()">
+<body>
 
     <div id="EleId">请选择右上角··· ,在浏览器中打开此页面</div>
     <button id="to-app-button" onclick="onTap()">点击跳转微北洋</button>
