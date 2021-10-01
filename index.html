@@ -2,57 +2,23 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <script src="https://g.alicdn.com/jssdk/u-link/index.min.js"></script>
     <script>
         function onTap() {
             try {
-                ULink([{
-                    id: "usr1m85a212j3bg0",
-                    data: {},
-                    selector: "#to-app-button",
-                    auto: true,
-                    timeout: 2000,
-                    lazy: false
-                }]);
+                let url = window.location.href
+                let postId = url.split("=")[1]
+                window.location.href = "twtstudio://weipeiyang.app/feedback?questionid=" + postId
                 // window.location.href="https://239what475.github.io/recipe"
             } catch (error) {
                 console.log(error.message)
             }
         }
-
-        (function () {
-            var print = {
-                lock: true,
-                log: function (param) {
-                    if (this.lock) {
-                        var element = document.createElement("div");
-                        element.style.background = 'green'
-                        element.style.fontSize = '20px'
-                        switch (typeof param) {
-                            case "string": element.innerHTML = param; break;
-                            case "object": element.innerHTML = JSON.stringify(param); break;
-                        }
-                        document.body.appendChild(element)
-                    }
-                }
-            }
-            window.console = print;
-        })(window)
     </script>
 </head>
 
 <body>
-    123
-    <a href="twtstudio://weipeiyang.app/mailbox?questionid=101">Do Whatever</a>
     <a href="twtstudio://weipeiyang.app/feedback?questionid=5528">Do Whatever2</a>
 
-    <!-- <a
-        href="intent://239what475.github.io/recipe/#Intent;scheme=https;package=com.twt.service;component=recipe;S.browser_fallback_url=https://www.baidu.com;end">Do
-        Whatever</a> -->
     <button id="to-app-button" onclick="onTap()">fefasefs</button>
 </body>
 
