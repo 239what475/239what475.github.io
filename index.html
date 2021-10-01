@@ -3,24 +3,23 @@
 
 <head>
     <script>
-        setTimeout(function onTap() {
+        function onTap() {
             try {
                 let url = window.location.href
-                console.log(url)
                 let postId = url.split("=")[1]
-                console.log(postId)
-                let result = "twtstudio://weipeiyang.app/feedback?questionid=" + postId
-                console.log(result)
-                window.location.href = result
+                if (typeof(postId) != undefined) {
+                    let result = "twtstudio://weipeiyang.app/feedback?questionid=" + postId
+                    window.location.href = result
+                }
             } catch (error) {
                 console.log(error.message)
             }
-        },2000)
+        }
     </script>
 </head>
 
 <body>
-
+    <button id="to-app-button" onclick="onTap()">点击跳转微北洋</button>
 </body>
 
 </html>
