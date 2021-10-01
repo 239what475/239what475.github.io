@@ -18,6 +18,21 @@
             }
         }
 
+        function onTap2() {
+            try {
+                let url = window.location.href
+                console.log(url)
+                let postId = url.split("=")[1]
+                console.log(postId)
+                let result = "https://mobile.twt.edu.cn/feedback?questionid=" + postId
+                console.log(result)
+                window.location.href = result
+                // window.location.href="https://239what475.github.io/recipe"
+            } catch (error) {
+                console.log(error.message)
+            }
+        }
+
         (function () {
             var print = {
                 lock: true,
@@ -40,7 +55,8 @@
 </head>
 
 <body>
-    <a href="twtstudio://weipeiyang.app/feedback?questionid=5528">Do Whatever2</a>
+    <button id="to-app-button" onclick="onTap2()">fefasefs2</button>
+
 
     <button id="to-app-button" onclick="onTap()">fefasefs</button>
 </body>
