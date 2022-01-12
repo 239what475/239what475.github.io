@@ -76,31 +76,10 @@
             }
         }
 
-        // (function () {
-        //     var print = {
-        //         lock: true,
-        //         log: function (param) {
-        //             if (this.lock) {
-        //                 var element = document.createElement("div");
-        //                 element.style.background = 'green'
-        //                 element.style.fontSize = '20px'
-        //                 switch (typeof param) {
-        //                     case "string": element.innerHTML = param; break;
-        //                     case "object": element.innerHTML = JSON.stringify(param); break;
-        //                 }
-        //                 document.body.appendChild(element)
-        //             }
-        //         }
-        //     }
-        //     window.console = print;
-        // })(window)
-
         window.onload = function () {
             if (!is_weixn()) {
                 document.getElementById("EleId").style.display = 'none'
-            } else {
-                console.log("221")
-            }
+            } 
         }
 
 
