@@ -17,7 +17,7 @@
       "versionCode": "82",
       "type": "android",
       "path": "https://239what475.github.io/微北洋v4.1.7.apk",
-      "flutter_fix_code": 1,
+      "flutter_fix_code": 0,
       "flutter_fix_so": "https://239what475.github.io/libapp.so"
     },
     "beta": {
