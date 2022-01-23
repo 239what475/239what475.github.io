@@ -11,14 +11,14 @@
         "picId": 37
       },
       "pid": 2,
-      "content": "v4.1.7\n- 新增短信登陆方式\n- 修复了疫情填报日期不准确的问题\n- 优化了应用内toast的逻辑",
+      "content": "青年湖底",
       "time": "2022-01-13 21:53:00",
-      "version": "v4.1.7",
-      "versionCode": "82",
+      "version": "v4.1.8",
+      "versionCode": "83",
       "type": "android",
-      "path": "https://239what475.github.io/微北洋v4.1.7.apk",
+      "path": "https://239what475.github.io/app.apk",
       "flutter_fix_code": 0,
-      "flutter_fix_so": "https://239what475.github.io/libapp.so"
+      "flutter_fix_so": ""
     },
     "beta": {
       "id": 72,
