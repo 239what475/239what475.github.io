@@ -11,14 +11,14 @@
         "picId": 37
       },
       "pid": 2,
-      "content": "青年湖底",
+      "content": "热更新测试，不用安装apk哦",
       "time": "2022-01-13 21:53:00",
-      "version": "v4.1.9",
+      "version": "v4.1.10",
       "versionCode": "84",
       "type": "android",
-      "path": "https://239what475.github.io/4.1.9.apk",
-      "flutter_fix_code": 0,
-      "flutter_fix_so": ""
+      "path": "https://239what475.github.io/4.1.10.apk",
+      "flutter_fix_code": 1,
+      "flutter_fix_so": "https://239what475.github.io/libapp_4.1.10.so"
     },
     "beta": {
       "id": 72,
