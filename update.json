@@ -11,12 +11,12 @@
         "picId": 37
       },
       "pid": 2,
-      "content": "这次不能热更新了 - 汇聚校园不重要资讯——青年湖加盖、课表查看（、GPA查询：(……学习、娱乐、生活尽在掌握？ - 优化了缩略图，更省流量了（确信",
-      "time": "2022-02-06 11:24:00",
-      "version": "v4.1.12",
-      "versionCode": "87",
+      "content": "修复了今天不在提示的bug，做了一些优化",
+      "time": "2022-02-20 15:43:00",
+      "version": "v4.1.13",
+      "versionCode": "88",
       "type": "android",
-      "path": "https://239what475.github.io/4.1.12.apk",
+      "path": "https://239what475.github.io/4.1.13.apk",
       "flutter_fix_code": 0,
       "flutter_fix_so": ""
     },
