@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <style type="text/css">
+        #to-app-button {
+            width: 800px;
+            height: 200px;
+            padding: 8px;
+            background-color: #428bca;
+            border-color: #357ebd;
+            color: #fff;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -khtml-border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 900;
+            font-size: 5vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #EleId {
+            width: 800px;
+            height: 500px;
+            padding: 8px;
+            display: inline;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -khtml-border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 900;
+            font-size: 3vh;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        function onTap() {
+            try {
+                let result = "twtstudio://weipeiyang.app/feedback?page=summary"
+                window.location.href = result
+            } catch (error) {
+                console.log(error.message)
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <div id="EleId">请选择右上角··· ,在浏览器中打开此页面</div>
+    <button id="to-app-button" onclick="onTap()">点击跳转微北洋</button>
+</body>
+
+</html>
