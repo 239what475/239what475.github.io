@@ -1,43 +1,17 @@
 {
-  "success": 1,
-  "info": {
-    "release": {
-      "id": 66,
-      "production": {
-        "id": 2,
-        "name": "微北洋",
-        "description": "汇聚校园重要资讯——校务专区、校园新闻、课表查看、GPA查询、党建系统……学习、娱乐、生活尽在掌握！",
-        "slogan": "学在北洋，一手掌握",
-        "picId": 37
-      },
-      "pid": 2,
-      "content": "修复了今天不在提示的bug，做了一些优化",
-      "time": "2022-02-20 15:43:00",
-      "version": "v4.1.13",
-      "versionCode": "88",
-      "type": "android",
-      "path": "https://239what475.github.io/4.1.13.apk",
-      "flutter_fix_code": 0,
-      "flutter_fix_so": ""
-    },
-    "beta": {
-      "id": 66,
-      "production": {
-        "id": 2,
-        "name": "微北洋",
-        "description": "汇聚校园重要资讯——校务专区、校园新闻、课表查看、GPA查询、党建系统……学习、娱乐、生活尽在掌握！",
-        "slogan": "学在北洋，一手掌握",
-        "picId": 37
-      },
-      "pid": 2,
-      "content": "修复了今天不在提示的bug，做了一些优化",
-      "time": "2022-02-20 15:43:00",
-      "version": "v4.1.13",
-      "versionCode": "88",
-      "type": "android",
-      "path": "https://239what475.github.io/4.1.13.apk",
-      "flutter_fix_code": 10,
-      "flutter_fix_so": "https://239what475.github.io/4.1.13.so"
-    }
+  "code": "200",
+  "message": "成功!",
+  "data": {
+    "versionCode": 99,
+    "releaseOrBeta": 1,
+    "version": "v4.2.5",
+    "content": "热更新！！",
+    "isForced": 0,
+    "time": "2022-04-05T23:46:46.401",
+    "path": "https://239what475.github.io/RELEASE-4.2.5-app-arm64-v8a-release.apk",
+    "apkSize": "16.20MB",
+    "flutterFixCode": 90,
+    "flutterFixSo": "https://239what475.github.io/libapp.zip",
+    "fileSize": "4.37MB"
   }
 }
