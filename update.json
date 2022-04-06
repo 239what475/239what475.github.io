@@ -2,7 +2,7 @@
   "code": "200",
   "message": "成功!",
   "data": {
-    "versionCode": 99,
+    "versionCode": 110,
     "releaseOrBeta": 1,
     "version": "v4.2.5",
     "content": "热更新！！",
