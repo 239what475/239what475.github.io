@@ -2,16 +2,16 @@
   "code": "200",
   "message": "成功!",
   "data": {
-    "versionCode": 100,
+    "versionCode": 105,
     "releaseOrBeta": 1,
-    "version": "v4.2.8",
+    "version": "v4.3.0",
     "content": "热更新1",
     "isForced": 0,
     "time": "2022-04-05T23:46:46.401",
-    "path": "https://239what475.github.io/RELEASE-4.2.8-app-arm64-v8a-release.apk",
+    "path": "https://239what475.github.io/RELEASE-4.3.0-app-arm64-v8a-release.apk",
     "apkSize": "16.20MB",
     "flutterFixCode": 90,
-    "flutterFixSo": "https://239what475.github.io/4.2.8-libapp.zip",
+    "flutterFixSo": "https://239what475.github.io/4.3.0-libapp.zip",
     "fileSize": "4.37MB"
   }
 }
